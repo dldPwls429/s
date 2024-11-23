@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function make(num){
+            if(num>=1 && num<=12){
+                document.write("<img src='image/book"+num+".jpg'>");
+                return true;
+            } else false
+        }
+        let book=parseInt(prompt("생일이 포함된 달을 입력하세요."));
+        let result=make(book);
+        if(result)
+        document.write("<hr>즐거운 시간 되세요.");
+        else
+        document.write("존재하지 않는 달입니다.")
+    </script>
+</body>
+</html>
